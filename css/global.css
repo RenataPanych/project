@@ -10,16 +10,16 @@
 
 @font-face {
   font-family: 'Noah Head';
-  src: url('../fonts/Noah-Medium.woff2') format('woff2');
+  src: url('../fonts/noah-Medium.woff2') format('woff2');
 }
 
 @font-face {
   font-family: 'Gilroy';
-  src: url('../fonts/Gilroy-Regular.woff2') format('woff2');
+  src: url('../fonts/gilroy-Regular.woff2') format('woff2');
 }
 
 body {
-  background: url('../image/Frame 2.png') no-repeat center center fixed;
+  background: url('../image/frame2.png') no-repeat center center fixed;
   background-size: cover;
   font-family: 'Gilroy', sans-serif;
   color: #000000;
