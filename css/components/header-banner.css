@@ -1,0 +1,53 @@
+.header {
+  position: relative;
+  width: 100%;
+  z-index: 20;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 12px 16px;
+  gap: 16px;
+}
+
+.header__btn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.header__btn:hover {
+  color: #3b3bff;
+}
+
+.header__divider {
+  width: 1px;
+  height: 14px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.header__icon {
+  width: 10px;
+  height: 10px;
+  margin-left: 4px;
+}
+
+.header__slash-btn {
+  background: none;
+  border: none;
+  color: #3b3bff;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .header__btn {
+    font-size: 16px;
+  }
+}
