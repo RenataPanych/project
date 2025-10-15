@@ -10,18 +10,18 @@
 
 @font-face {
   font-family: 'Noah Head';
-  src: url('fonts/Noah-Medium.woff2') format('woff2');
+  src: url('../fonts/Noah-Medium.woff2') format('woff2');
 }
 
 @font-face {
   font-family: 'Gilroy';
-  src: url('fonts/Gilroy-Regular.woff2') format('woff2');
+  src: url('../fonts/Gilroy-Regular.woff2') format('woff2');
 }
 
 body {
-  background: url('image/Frame 2.png') no-repeat center center fixed;
+  background: url('../image/Frame 2.png') no-repeat center center fixed;
   background-size: cover;
   font-family: 'Gilroy', sans-serif;
-  color: #fff;
+  color: #000000;
   overflow-x: hidden;
 }
