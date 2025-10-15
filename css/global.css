@@ -1,5 +1,27 @@
-/* Important style */
 .container {
 	max-width: 1170px;
 	margin: 0 auto;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Noah Head';
+  src: url('fonts/Noah-Medium.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('fonts/Gilroy-Regular.woff2') format('woff2');
+}
+
+body {
+  background: url('image/Frame 2.png') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Gilroy', sans-serif;
+  color: #fff;
+  overflow-x: hidden;
 }
