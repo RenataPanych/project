@@ -21,7 +21,7 @@
 .hero__content {
   position: relative;
   z-index: 2;
-  padding: 0 1.5rem;
+  padding: 100px;
   max-width: 700px;
 }
 
@@ -58,7 +58,7 @@
 /* Десктопна версія */
 @media (min-width: 768px) {
   .hero {
-    background-image: url("images/hero-bg-desktop.jpg"); /* фон для десктопу */
+    background-image: url("images/header-banner.png"); /* фон для десктопу */
     justify-content: flex-start;
     text-align: left;
   }
