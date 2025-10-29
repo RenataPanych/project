@@ -58,7 +58,7 @@
 /* Десктопна версія */
 @media (min-width: 768px) {
   .hero {
-    background-image: url("..images/header-banner.png"); /* фон для десктопу */
+    background-image: url("../images/header-banner.png"); /* фон для десктопу */
     justify-content: flex-start;
     text-align: left;
   }
