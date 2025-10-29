@@ -1,182 +1,82 @@
 .hero {
   position: relative;
-  z-index: 10;
-}
-
-.hero__container {
-  position: relative;
   width: 100%;
   height: 100vh;
-}
-
-.hero__decor {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  pointer-events: none;
-}
-
-.hero__ball {
-  position: absolute;
-  animation: spin 13s linear infinite;
-  transform: translateY(-50%);
-}
-
-.hero__ball--1 {
-  width: 700px;
-  height: 700px;
-  top: 60%;
-  left: 570px;
-}
-
-.hero__ball--2 {
-  width: 280px;
-  height: 280px;
-  top: 35%;
-  left: 1080px;
-}
-
-.hero__ball--3 {
-  width: 80px;
-  height: 80px;
-  top: 55%;
-  left: 1280px;
-}
-
-.hero__ball--4 {
-  width: 280px;
-  height: 280px;
-  top: 90%;
-  left: -140px;
-}
-
-@keyframes spin {
-  from { transform: translateY(-50%) rotate(0deg); }
-  to { transform: translateY(-50%) rotate(360deg); }
-}
-
-.hero__overlay--glass {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 58vw;
-  height: 100vh;
-  backdrop-filter: blur(1.5px);
-  background: rgba(255, 255, 255, 0.1);
-  z-index: 2;
-}
-
-.hero__logo {
-  position: fixed;
-  top: 30px;
-  left: 120px;
-  width: 120px;
-  z-index: 99;
-}
-
-.hero__content {
-  position: fixed;
-  top: 45%;
-  left: 31%;
-  transform: translate(-50%, -50%);
-  text-align: left;
-  color: white;
-  z-index: 99;
-}
-
-.hero__title {
-  font-family: 'Noah Head', sans-serif;
-  font-size: 63px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.hero__title-gradient {
-  background: linear-gradient(90deg, #ff7373, #ff56ae, #6771ff, #fff782);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.hero__text {
-  font-size: 18px;
-  margin-top: 10px;
-}
-
-.button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 20px;
-  border-radius: 999px;
-  font-size: 20px;
-  font-family: 'Gilroy', sans-serif;
-  color: white;
-  border: none;
-  cursor: pointer;
-  gap: 10px;
-}
-
-.button--fancy {
-  margin-top: 30px;
-  background: linear-gradient(90deg, #ff3cac, #fba63c, #ffff82);
-  position: relative;
-  overflow: hidden;
-}
-
-.button__icon {
+  background-image: url("images/hero-bg-mobile.jpg"); /* мобільний фон */
+  background-size: cover;
+  background-position: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 38px;
-  height: 38px;
-  background-color: rgba(255, 255, 255, 0.8);
-  border-radius: 50%;
+  text-align: center;
+  color: #fff;
 }
 
-.button__icon svg {
-  width: 18px;
-  height: 18px;
+.hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
 }
 
-.hero__stats {
-  position: fixed;
-  bottom: 30px;
-  left: 125px;
-  z-index: 99;
+.hero__content {
+  position: relative;
+  z-index: 2;
+  padding: 0 1.5rem;
+  max-width: 700px;
 }
 
-.stats {
-  display: flex;
-  align-items: flex-end;
-  gap: 60px;
+.hero__title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
 }
 
-.stats__item {
-  text-align: left;
+.hero__subtitle {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  color: #e0e0e0;
 }
 
-.stats__number {
-  font-size: 40px;
-  font-weight: bold;
-  color: white;
+.hero__button {
+  background-color: #fff;
+  color: #0b0b0b;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 40px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
-.stats__label {
-  font-size: 16px;
-  background: linear-gradient(90deg, #ff3cac, #fba63c, #ffff82);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.hero__button:hover {
+  background-color: #dcdcdc;
 }
 
+/* Десктопна версія */
 @media (min-width: 768px) {
+  .hero {
+    background-image: url("images/hero-bg-desktop.jpg"); /* фон для десктопу */
+    justify-content: flex-start;
+    text-align: left;
+  }
+
+  .hero__content {
+    padding-left: 8%;
+    max-width: 600px;
+  }
+
   .hero__title {
-    font-size: 80px;
+    font-size: 4.5rem;
   }
-  .hero__text {
-    font-size: 20px;
+
+  .hero__subtitle {
+    font-size: 1.2rem;
   }
-  .hero__logo {
-    width: 140px;
+
+  .hero__button {
+    font-size: 1.1rem;
   }
 }

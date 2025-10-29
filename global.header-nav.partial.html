@@ -1,17 +1,33 @@
 <header class="header">
   <div class="header__container">
+    <a href="#" class="header__logo">
+      <img src="images/logo.svg" alt="FacadeLab">
+    </a>
+
     <nav class="header__nav">
-      <button class="header__btn">Learn</button>
-      <div class="header__divider"></div>
-      <button class="header__btn">Prices</button>
-      <div class="header__divider"></div>
-      <button class="header__btn">
-        En
-        <img src="image/Arrow 2.svg" alt="Language arrow" class="header__icon">
-      </button>
-      <button class="header__slash-btn">
-        <span>///</span>
-      </button>
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#about" class="nav__link">Про нас</a></li>
+        <li class="nav__item"><a href="#portfolio" class="nav__link">Портфоліо</a></li>
+        <li class="nav__item"><a href="#services" class="nav__link">Послуги</a></li>
+        <li class="nav__item"><a href="#faq" class="nav__link">FAQ</a></li>
+        <li class="nav__item"><a href="#contacts" class="nav__link">Контакти</a></li>
+      </ul>
     </nav>
+
+    <div class="header__socials">
+      <a href="#" class="social__link" aria-label="Instagram">
+        <img src="images/instagram.svg" alt="">
+      </a>
+      <a href="#" class="social__link" aria-label="Telegram">
+        <img src="images/telegram.svg" alt="">
+      </a>
+      <a href="#" class="social__link" aria-label="TikTok">
+        <img src="images/tiktok.svg" alt="">
+      </a>
+    </div>
+
+    <button class="header__burger" aria-label="Меню">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </header>

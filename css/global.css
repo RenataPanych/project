@@ -17,11 +17,3 @@
   font-family: 'Gilroy';
   src: url('../fonts/gilroy-Regular.woff2') format('woff2');
 }
-
-body {
-  background: url('../image/frame2.png') no-repeat center center fixed;
-  background-size: cover;
-  font-family: 'Gilroy', sans-serif;
-  color: #000000;
-  overflow-x: hidden;
-}
