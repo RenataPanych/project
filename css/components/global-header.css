@@ -8,12 +8,10 @@
 body {
   font-family: "Inter", sans-serif;
   color: #fff;
-  background-color: #0c0f1a;
 }
 
 /* ========== HEADER ========== */
 .header {
-  background-color: #0c0f1a;
   padding: 16px 20px;
   position: fixed;
   top: 0;
