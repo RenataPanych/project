@@ -53,22 +53,6 @@ body {
   color: #7da4ff;
 }
 
-/* SOCIAL ICONS */
-.header__socials {
-  display: flex;
-  gap: 12px;
-}
-
-.social__link img {
-  width: 22px;
-  height: 22px;
-  filter: brightness(100%);
-  transition: filter 0.2s ease;
-}
-
-.social__link:hover img {
-  filter: brightness(60%);
-}
 
 /* BURGER MENU */
 .header__burger {
@@ -97,5 +81,21 @@ body {
 
   .header__nav {
     display: block;
+    
   }
+  /* SOCIAL ICONS */
+.header__socials {
+  display: flex;
+  gap: 12px;
+}
+.social__link img {
+  width: 22px;
+  height: 22px;
+  filter: brightness(100%);
+  transition: filter 0.2s ease;
+}
+
+.social__link:hover img {
+  filter: brightness(60%);
+}
 }
