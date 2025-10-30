@@ -26,27 +26,26 @@
 }
 
 .hero__title {
-  font-size: 2.5rem;
-  font-weight: 800;
-  letter-spacing: 1px;
-  margin-bottom: 1rem;
+  font-family: "Syncopate";
+  font-size: 54px;
+  margin-bottom: 11px;
 }
 
 .hero__subtitle {
-  font-size: 1rem;
-  line-height: 1.6;
-  margin-bottom: 2rem;
-  color: #e0e0e0;
+  font-family: "Gilroy-regular";
+  font-size: 15px;
+  margin-bottom: 1px;
+  color: #fff;
 }
 
 .hero__button {
   background-color: #fff;
-  color: #0b0b0b;
+  color: #000;
   border: none;
-  padding: 1rem 2rem;
+  padding: 18px 33px;
   border-radius: 40px;
-  font-size: 1rem;
-  font-weight: 600;
+  font-family: "Gilroy-regular";
+  font-size: 15px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -64,19 +63,20 @@
   }
 
   .hero__content {
-    padding-left: 8%;
-    max-width: 600px;
+    padding-left:134px;
+    max-width: 700px;
   }
 
   .hero__title {
-    font-size: 4.5rem;
+    font-size: 106px;
   }
 
   .hero__subtitle {
-    font-size: 1.2rem;
+    font-size: 20px;
   }
 
   .hero__button {
-    font-size: 1.1rem;
+    font-size: 20px;
+    padding: 24px 48px;
   }
 }
