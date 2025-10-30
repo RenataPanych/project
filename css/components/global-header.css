@@ -43,6 +43,7 @@ body {
 }
 
 .nav__link {
+  font-family: "Gilroy-regular";
   color: #fff;
   text-decoration: none;
   font-weight: 500;
