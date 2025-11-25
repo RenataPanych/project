@@ -1,0 +1,52 @@
+.portfolio {
+  background-image: url(../../images/portfolio-mobile.png);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  min-height: clamp(85vh, 55vw, 130vh);
+  padding: 40px 20px;
+}
+
+.portfolio_overlay {
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.portfolio_title {
+text-align: center;
+width: 100%;
+display: block;
+margin-bottom: 20px;
+  font-family: "Unbounded-black";
+  font-size: min(41px, 8vw);
+  color: #fff;
+}
+
+.portfolio_container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+/* Великий блок зверху */
+.project_item_big {
+  grid-column: 1 / -1; /* займає весь ряд */
+  height: 350px; /* підлаштуй як хочеш */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  border-radius: 10px;
+}
+
+/* Маленькі блоки */
+.project_item_small {
+  height: 180px; /* регулюй під макет */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  border-radius: 10px;
+}
+
+

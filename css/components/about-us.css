@@ -1,0 +1,65 @@
+.about_us {
+  background-image: url(../../images/pro-nas-mobile.png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  text-align: center;
+  min-height: clamp(85vh, 55vw, 130vh);
+}
+
+.about_us_container {
+  padding: 47px;
+}
+
+.about_us_title {
+  font-family: "Unbounded-black";
+  font-size: min(41px, 8vw);
+  color: #07113a;
+}
+
+.highlight {
+  font-family: "Unbounded-black";
+  font-size: min(21px, 8vw);
+  color: #07113a;
+}
+
+.about_us_subtitle {
+  font-family: "Gilroy-medium";
+  color: #07113a;
+  font-size: min(25px, 4vw);
+}
+
+@media (min-width: 1025px) {
+  .about_us {
+    background-image: url(../../images/pro-nas-dekstop.png);
+    justify-content: flex-start;
+    text-align: left;
+    min-height: clamp(55vh, 45vw, 130vh);
+  }
+
+  .about_us_container {
+    min-height: clamp(15vh, 25vw, 130vh);
+    padding-top: clamp(50px, 12vw, 160px);
+    padding-left: clamp(0px, 9vw, 160px);
+    max-width: 700px;
+  }
+
+  .about_us_title {
+  font-size: min(61px, 8vw);
+}
+
+.highlight {
+  font-size: min(35px, 8vw);
+}
+
+.about_us_subtitle {
+  font-size: min(35px, 4vw);
+}
+
+.about_us_overlay {
+            max-width: min(1470px, 84vw);
+}
+
+}

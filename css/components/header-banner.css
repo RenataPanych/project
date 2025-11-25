@@ -1,21 +1,41 @@
 .hero {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  background-image: url("../../images/mobile-background.png"); /* мобільний фон */
+  background-image: url(../../images/mobile-background.png);
   background-size: cover;
   background-position: center;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+  min-height: clamp(100vh, 55vw, 130vh);
+}
+
+.hero__title {
+  font-family: "Syncopate";
   color: #fff;
+  font-size: min(53px, 11vw);
+  word-wrap: break-word;
+}
+
+.hero__subtitle {
+  font-family: "Gilroy-regular";
+  color: #fff;
+  font-size: min(15px, 6vw);
+}
+
+.hero__button {
+  background-color: #fff;
+  color: #000;
+  border: none;
+  border-radius: 40px;
+  padding: 18px 33px;
+  font-size: 15px;
+  font-family: "Gilroy-bold";
 }
 
 .hero__overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.4);
+  pointer-events: none;
 }
 
 .hero__content {
@@ -25,58 +45,34 @@
   max-width: 100%;
 }
 
-.hero__title {
-  font-family: "Syncopate";
-  font-size: 54px;
-  margin-bottom: 11px;
-}
-
-.hero__subtitle {
-  font-family: "Gilroy-regular";
-  font-size: 15px;
-  margin-bottom: 1px;
-  color: #fff;
-}
-
-.hero__button {
-  background-color: #fff;
-  color: #000;
-  border: none;
-  padding: 18px 33px;
-  border-radius: 40px;
-  font-family: "Gilroy-regular";
-  font-size: 15px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.hero__button:hover {
-  background-color: #dcdcdc;
-}
-
-/* Десктопна версія */
 @media (min-width: 768px) {
   .hero {
-    background-image: url("../../images/header-banner.png"); /* фон для десктопу */
+    background-image: url(../../images/header-banner.png);
     justify-content: flex-start;
     text-align: left;
   }
 
   .hero__content {
-    padding-left:134px;
+    padding-top: clamp(50px, 12vw, 160px); 
+    padding-left: clamp(0px, 9vw, 160px);
     max-width: 700px;
   }
 
   .hero__title {
-    font-size: 106px;
+    font-size: min(125px, 8vw);
+    word-wrap: normal;
+    letter-spacing: 4px;
+    line-height: 0.7;
   }
 
   .hero__subtitle {
     font-size: 20px;
+    margin-left: 11px;
   }
 
   .hero__button {
     font-size: 20px;
     padding: 24px 48px;
+    margin-left: 9px;
   }
 }

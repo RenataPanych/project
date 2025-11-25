@@ -1,0 +1,112 @@
+.facts_in_numbers {
+  background-image: url(../../images/facts_in_numbers_mobile.png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: clamp(85vh, 55vw, 130vh);
+}
+
+.facts_overlay {
+  max-width: 95%;
+  background-image: url(../../images/background-mobile-facts.png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: clamp(65vh, 55vw, 130vh);
+  border-radius: 40px;
+}
+
+.facts_content {
+  padding: 19px;
+}
+
+.facts_title {
+  font-family: "Unbounded-black";
+  font-size: min(41px, 8vw);
+  text-align: left;
+  color: #fff;
+  max-width: 95%;
+  word-wrap: break-word;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.numbers_container {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  gap: 20px;
+  justify-content: center;
+}
+
+.number_item {
+  background-color: #fff;
+  border-radius: 12px;
+  width: min(310px, 40vw);
+  height: min(177px, 33vw);
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 15px 5px 0px 10px;
+}
+
+.number_calculate {
+  font-family: "Unbounded-black";
+  font-size: min(64px, 8vw);
+  line-height: 0.8;
+  color: #07113a;
+}
+
+.facts_subtitle {
+  font-family: "Gilroy-medium";
+  color: #07113a;
+  font-size: min(25px, 3.6vw);
+}
+
+@media (min-width: 1025px) {
+  .facts_in_numbers {
+    background-image: url(../../images/facts_in_numbers_dekstop.png);
+    min-height: clamp(35vh, 35vw, 130vh);
+  }
+
+  .facts_overlay {
+    background-image: url(../../images/background-dekstop-facts.png);
+    min-height: clamp(15vh, 25vw, 130vh);
+  }
+
+  .facts_content {
+    max-width: min(1470px, 84vw);
+  }
+
+  .numbers_container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .number_item {
+    width: min(280px, 18vw);
+    height: min(161px, 33vw);
+  }
+
+  .number_calculate {
+    font-size: min(44px, 6vw);
+  }
+
+  .facts_subtitle {
+    font-size: min(21px, 1.6vw);
+  }
+
+  .facts_title {
+    line-height: 1;
+    font-size: min(65px, 4vw);
+    word-wrap: break-word;
+    max-width: 40%;
+    margin-bottom: 40px;
+  }
+}
