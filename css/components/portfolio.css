@@ -14,39 +14,123 @@
   margin: 0 auto;
 }
 
-.portfolio_title {
-text-align: center;
-width: 100%;
-display: block;
-margin-bottom: 20px;
-  font-family: "Unbounded-black";
-  font-size: min(41px, 8vw);
-  color: #fff;
+.portfolio-heading {
+    text-align: center;
+    font-size: min(41px, 8vw);
+    font-family: "Unbounded-bold";
+    color: #fff;
 }
 
-.portfolio_container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+
+.portfolio-main {
+    display: block;
+    background: #ffffff;
+    color: #0c1d4a;
+    overflow: hidden;
+    text-decoration: none;
 }
 
-/* Великий блок зверху */
-.project_item_big {
-  grid-column: 1 / -1; /* займає весь ряд */
-  height: 350px; /* підлаштуй як хочеш */
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  border-radius: 10px;
+.portfolio-main-img img {
+    width: 100%;
+    display: block;
 }
 
-/* Маленькі блоки */
-.project_item_small {
-  height: 180px; /* регулюй під макет */
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  border-radius: 10px;
+.portfolio-main-info {
+    padding: 12px 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
+.portfolio-main-info h3 {
+    font-size: 18px;
+    margin-bottom: 2px;
+}
+
+.portfolio-main-info p {
+    font-size: 12px;
+    color: #334;
+}
+
+.arrow {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.portfolio-card {
+    background: #ffffff;
+    color: #0c1d4a;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.portfolio-card img {
+    width: 100%;
+    display: block;
+}
+
+.card-info {
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-info h4 {
+    font-size: 14px;
+    margin-bottom: 2px;
+}
+
+.card-info p {
+    font-size: 11px;
+    color: #334;
+}
+
+.portfolio-main-img,
+.portfolio-card-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-main-img img,
+.portfolio-card-img img {
+    width: 100%;
+    display: block;
+}
+
+.portfolio-main-img::before,
+.portfolio-card-img::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to top,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(255, 255, 255, 0) 15%
+    );
+    pointer-events: none;
+}
+
+
+@media (min-width: 768px) {
+    .portfolio-block {
+        max-width: 1200px;
+        padding: 40px 20px;
+    }
+
+    .portfolio-heading {
+        font-size: 48px;
+        margin-bottom: 32px;
+    }
+
+    .portfolio-grid {
+        gap: 22px;
+    }
+}
 
